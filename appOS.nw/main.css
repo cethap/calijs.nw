@@ -51,6 +51,7 @@ span {
   -ms-user-select: none;
   -o-user-select: none;
   cursor: default;
+  -webkit-app-region: drag;
 }
 
 .mac .buttons {
@@ -58,6 +59,7 @@ span {
   padding-top: 3px;
   float: left;
   line-height: 0px;
+  -webkit-app-region: no-drag;
 }
 
 .mac .buttons:hover a {
@@ -192,6 +194,7 @@ h3 {
   top: 0;
   right: 3px;
   top: -30px;
+  -webkit-app-region: no-drag;
 }
 .windows .title-bar div {
   display: inline-block;
