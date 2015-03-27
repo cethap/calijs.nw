@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Day54: WebGL Particle Animation.</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+
+    <div class="windows" style="display:none;">
+      <div class="transp"></div>
+      <div class="title-bar">
+        <div class="minimize" onclick="m()"></div>
+        <div class="maximize" onclick="mx()"></div>
+        <div class="close" onclick="c()"></div>
+        <div class="change" onclick="chge()"></div>
+      </div>
+      <div class="content">Bla</div>
+    </div>
+
+
+  <div class="window mac">
+    <div class="titlebar" style="-webkit-app-region: drag">
+      <div class="buttons">
+        <div class="close" onclick="c()">
+          <a class="closebutton" href="#"><span><strong>x</strong></span></a>
+        </div>
+        <div class="minimize" onclick="m()">
+          <a class="minimizebutton" href="#"><span><strong>&ndash;</strong></span></a>
+        </div>
+        <div class="zoom" onclick="mx()">
+          <a class="zoombutton" href="#"><span><strong>+</strong></span></a>
+        </div>
+        <div class="zoom" onclick="chge()">
+          <a class="zoombutton" href="#"><span><strong>c</strong></span></a>
+        </div>        
+      </div>
+    </div>
+    <div class="content">
+      Bla
+    </div>
+  </div>
+
+  <canvas id="c"></canvas>
+  <script id="shader-fs" type="x-shader/x-fragment">
+    #ifdef GL_ES
+    precision highp float;
+    #endif
+    void main(void) {
+      gl_FragColor = vec4(0.2, 0.3, 0.4, 1.0);
+    }
+  </script>
+  <script id="shader-vs" type="x-shader/x-vertex">
+    attribute vec3 vertexPosition;
+
+    uniform mat4 modelViewMatrix;
+    uniform mat4 perspectiveMatrix;
+
+    void main(void) {
+      gl_Position = perspectiveMatrix * modelViewMatrix * vec4(  vertexPosition, 1.0);
+    }
+  </script>
+  <script src="js/index.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

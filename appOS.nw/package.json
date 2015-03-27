@@ -1,0 +1,9 @@
+{
+  "name": "nw-demo",
+  "main": "index.html",
+   "window": {
+   	"transparent":true,
+   	"frame": false,
+   	"toolbar": false
+   }
+}
