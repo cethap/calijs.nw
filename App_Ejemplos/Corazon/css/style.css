@@ -1,0 +1,11 @@
+body
+{ 
+  padding: 0;
+  margin: 0;
+}
+
+p{
+  position:absolute;
+  color:#fff;
+  font-size:40px;
+}

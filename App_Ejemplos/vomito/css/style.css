@@ -1,0 +1,19 @@
+body{
+  background:transparent;
+  
+}
+div, canvas {
+  position: absolute;
+}
+
+canvas {
+  left: 154px;
+  top: 87px;
+}
+
+div {
+  width: 296px;
+  height: 840px;
+  background: url("vomit.png");
+  background-repeat:no-repeat;
+}

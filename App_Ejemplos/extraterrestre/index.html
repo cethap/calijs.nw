@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>CodePen - Inifnite corridor</title>
+
+  <link rel="stylesheet" href="css/reset.css">
+
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+    <script src="js/index.js"></script>
+
+</head>
+
+<body  onload="init();">
+
+<script>
+  var gulp = require('gulp');
+  gulp.task('reload', function () {
+    if (location) location.reload();
+  });
+
+  gulp.watch('**/*', ['reload']);
+</script>
+
+
+<div style="width:100%; height:100%; margin:0 auto; background-color:transparent; position:absolute; left:0; right:0;" >
+  <div>
+    <video id="camFeed" width="100%" height="100%" autoplay>
+  </video>
+</div>
+
+<div style="display:none;">
+    <canvas id="photo" width="320" height="240">
+    </canvas>
+</div>
+
+<div style="margin:0 auto; width:82px; display:none;">
+    <input type="button" value="Take Photo" onclick="takePhoto();">
+</div>
+
+
+<div class="perspective">
+  <div class="slider">
+    <div class="corridor">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div><span class="img"><span class="eye"></span></span><span class="img-mirror"><span class="eye"></span></span>
+    </div>
+    <div class="corridor">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div><span class="img"><span class="eye"></span></span><span class="img-mirror"><span class="eye"></span></span>
+    </div>
+    <div class="corridor">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div><span class="img"><span class="eye"></span></span><span class="img-mirror"><span class="eye"></span></span>
+    </div>
+    <div class="corridor">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div><span class="img"><span class="eye"></span></span><span class="img-mirror"><span class="eye"></span></span>
+    </div>
+    <div class="corridor">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div><span class="img"><span class="eye"></span></span><span class="img-mirror"><span class="eye"></span></span>
+    </div>
+  </div>
+</div>
+
+
+</body>
+
+</html>

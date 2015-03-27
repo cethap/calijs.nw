@@ -1,0 +1,353 @@
+/* --------------------------------- 
+  Mixins 
+--------------------------------- */
+#moon, .circle {
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#moon {
+  position: absolute;
+  fill: #FCF8F4;
+  fill-rule: evenodd;
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  top: 50%;
+}
+
+/* --------------------------------- 
+  Circles 
+--------------------------------- */
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #F4C3D1;
+  position: absolute;
+  opacity: 0;
+  left: 50%;
+  top: 50%;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.circle:nth-child(11n+0) {
+  -webkit-animation: undulate 5s infinite;
+  -moz-animation: undulate 5s infinite;
+  -o-animation: undulate 5s infinite;
+  animation: undulate 5s infinite;
+  -webkit-animation-delay: 0ms;
+  animation-delay: 0ms;
+}
+
+.circle:nth-child(11n+1) {
+  -webkit-animation: undulate 5s infinite;
+  -moz-animation: undulate 5s infinite;
+  -o-animation: undulate 5s infinite;
+  animation: undulate 5s infinite;
+  -webkit-animation-delay: 500ms;
+  animation-delay: 500ms;
+}
+
+.circle:nth-child(11n+2) {
+  -webkit-animation: undulate 5s infinite;
+  -moz-animation: undulate 5s infinite;
+  -o-animation: undulate 5s infinite;
+  animation: undulate 5s infinite;
+  -webkit-animation-delay: 1000ms;
+  animation-delay: 1000ms;
+}
+
+.circle:nth-child(11n+3) {
+  -webkit-animation: undulate 5s infinite;
+  -moz-animation: undulate 5s infinite;
+  -o-animation: undulate 5s infinite;
+  animation: undulate 5s infinite;
+  -webkit-animation-delay: 1500ms;
+  animation-delay: 1500ms;
+}
+
+.circle:nth-child(11n+4) {
+  -webkit-animation: undulate 5s infinite;
+  -moz-animation: undulate 5s infinite;
+  -o-animation: undulate 5s infinite;
+  animation: undulate 5s infinite;
+  -webkit-animation-delay: 2000ms;
+  animation-delay: 2000ms;
+}
+
+.circle:nth-child(11n+5) {
+  -webkit-animation: undulate 5s infinite;
+  -moz-animation: undulate 5s infinite;
+  -o-animation: undulate 5s infinite;
+  animation: undulate 5s infinite;
+  -webkit-animation-delay: 2500ms;
+  animation-delay: 2500ms;
+}
+
+.circle:nth-child(11n+6) {
+  -webkit-animation: undulate 5s infinite;
+  -moz-animation: undulate 5s infinite;
+  -o-animation: undulate 5s infinite;
+  animation: undulate 5s infinite;
+  -webkit-animation-delay: 3000ms;
+  animation-delay: 3000ms;
+}
+
+.circle:nth-child(11n+7) {
+  -webkit-animation: undulate 5s infinite;
+  -moz-animation: undulate 5s infinite;
+  -o-animation: undulate 5s infinite;
+  animation: undulate 5s infinite;
+  -webkit-animation-delay: 3500ms;
+  animation-delay: 3500ms;
+}
+
+.circle:nth-child(11n+8) {
+  -webkit-animation: undulate 5s infinite;
+  -moz-animation: undulate 5s infinite;
+  -o-animation: undulate 5s infinite;
+  animation: undulate 5s infinite;
+  -webkit-animation-delay: 4000ms;
+  animation-delay: 4000ms;
+}
+
+.circle:nth-child(11n+9) {
+  -webkit-animation: undulate 5s infinite;
+  -moz-animation: undulate 5s infinite;
+  -o-animation: undulate 5s infinite;
+  animation: undulate 5s infinite;
+  -webkit-animation-delay: 4500ms;
+  animation-delay: 4500ms;
+}
+
+.circle:nth-child(11n+10) {
+  -webkit-animation: undulate 5s infinite;
+  -moz-animation: undulate 5s infinite;
+  -o-animation: undulate 5s infinite;
+  animation: undulate 5s infinite;
+  -webkit-animation-delay: 5000ms;
+  animation-delay: 5000ms;
+}
+
+.circle:nth-child(11n+11) {
+  -webkit-animation: undulate 5s infinite;
+  -moz-animation: undulate 5s infinite;
+  -o-animation: undulate 5s infinite;
+  animation: undulate 5s infinite;
+  -webkit-animation-delay: 5500ms;
+  animation-delay: 5500ms;
+}
+
+/* --------------------------------- 
+  Animation 
+--------------------------------- */
+@-webkit-keyframes undulate {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  14% {
+    background-color: #F4C3D1;
+  }
+  21% {
+    background-color: #E4A1BD;
+  }
+  28% {
+    background-color: #D17FA8;
+  }
+  35% {
+    background-color: #BA6090;
+  }
+  42% {
+    background-color: #954B76;
+  }
+  49% {
+    background-color: #743562;
+  }
+  56% {
+    background-color: #5A2C56;
+  }
+  63% {
+    background-color: #54214F;
+  }
+  70% {
+    background-color: #461B46;
+  }
+  77% {
+    background-color: #320F3B;
+  }
+  84% {
+    background-color: #2C0A37;
+  }
+  91% {
+    background-color: #250831;
+  }
+  100% {
+    background-color: #150525;
+    width: 250px;
+    height: 250px;
+    opacity: 0;
+  }
+}
+@-moz-keyframes undulate {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  14% {
+    background-color: #F4C3D1;
+  }
+  21% {
+    background-color: #E4A1BD;
+  }
+  28% {
+    background-color: #D17FA8;
+  }
+  35% {
+    background-color: #BA6090;
+  }
+  42% {
+    background-color: #954B76;
+  }
+  49% {
+    background-color: #743562;
+  }
+  56% {
+    background-color: #5A2C56;
+  }
+  63% {
+    background-color: #54214F;
+  }
+  70% {
+    background-color: #461B46;
+  }
+  77% {
+    background-color: #320F3B;
+  }
+  84% {
+    background-color: #2C0A37;
+  }
+  91% {
+    background-color: #250831;
+  }
+  100% {
+    background-color: #150525;
+    width: 250px;
+    height: 250px;
+    opacity: 0;
+  }
+}
+@-ms-keyframes undulate {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  14% {
+    background-color: #F4C3D1;
+  }
+  21% {
+    background-color: #E4A1BD;
+  }
+  28% {
+    background-color: #D17FA8;
+  }
+  35% {
+    background-color: #BA6090;
+  }
+  42% {
+    background-color: #954B76;
+  }
+  49% {
+    background-color: #743562;
+  }
+  56% {
+    background-color: #5A2C56;
+  }
+  63% {
+    background-color: #54214F;
+  }
+  70% {
+    background-color: #461B46;
+  }
+  77% {
+    background-color: #320F3B;
+  }
+  84% {
+    background-color: #2C0A37;
+  }
+  91% {
+    background-color: #250831;
+  }
+  100% {
+    background-color: #150525;
+    width: 250px;
+    height: 250px;
+    opacity: 0;
+  }
+}
+@keyframes undulate {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  14% {
+    background-color: #F4C3D1;
+  }
+  21% {
+    background-color: #E4A1BD;
+  }
+  28% {
+    background-color: #D17FA8;
+  }
+  35% {
+    background-color: #BA6090;
+  }
+  42% {
+    background-color: #954B76;
+  }
+  49% {
+    background-color: #743562;
+  }
+  56% {
+    background-color: #5A2C56;
+  }
+  63% {
+    background-color: #54214F;
+  }
+  70% {
+    background-color: #461B46;
+  }
+  77% {
+    background-color: #320F3B;
+  }
+  84% {
+    background-color: #2C0A37;
+  }
+  91% {
+    background-color: #250831;
+  }
+  100% {
+    background-color: #150525;
+    width: 250px;
+    height: 250px;
+    opacity: 0;
+  }
+}
+/* --------------------------------- 
+  Global 
+--------------------------------- */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: transparent;
+}
